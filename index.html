@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market - BAWSAQ Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="active">Market</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="news.html">News</a>
+    </nav>
+
+    <main>
+        <h1>Stock Market</h1>
+        <table class="stock-table">
+            <thead>
+                <tr>
+                    <th>Company</th>
+                    <th>Price</th>
+                    <th>Change</th>
+                    <th>Trend</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>FlyUS</td>
+                    <td>$<span id="flyus-price">50</span></td>
+                    <td><span id="flyus-change" class="up">+0%</span></td>
+                    <td><span class="arrow up">&#9650;</span></td>
+                    <td>
+                        <button onclick="buyStock('FlyUS', 'flyus-price', 'flyus-change', 'flyus-arrow')">Buy</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Grotti</td>
+                    <td>$<span id="grotti-price">120</span></td>
+                    <td><span id="grotti-change" class="down">-0%</span></td>
+                    <td><span class="arrow down">&#9660;</span></td>
+                    <td>
+                        <button onclick="buyStock('Grotti', 'grotti-price', 'grotti-change', 'grotti-arrow')">Buy</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Maze Bank</td>
+                    <td>$<span id="maze-price">200</span></td>
+                    <td><span id="maze-change" class="up">+0%</span></td>
+                    <td><span class="arrow up">&#9650;</span></td>
+                    <td>
+                        <button onclick="buyStock('Maze Bank', 'maze-price', 'maze-change', 'maze-arrow')">Buy</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>
